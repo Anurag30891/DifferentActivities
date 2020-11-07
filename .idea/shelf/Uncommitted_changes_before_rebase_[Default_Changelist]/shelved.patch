@@ -1,0 +1,17 @@
+Index: app/src/main/java/android/example/differentactivities/LifeCycleActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package android.example.differentactivities;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.os.Bundle;\r\nimport android.util.Log;\r\n\r\npublic class LifeCycleActivity extends AppCompatActivity {\r\n\r\n    // This method is for onCreate\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_life_cycle);\r\n        Log.v(\"MainActivity\", \"onCreate\");\r\n    }\r\n\r\n    @Override\r\n    protected void onStart() {\r\n        super.onStart();\r\n        Log.v(\"MainActivity\", \"onStart\");\r\n    }\r\n\r\n    @Override\r\n    protected void onResume() {\r\n        super.onResume();\r\n        Log.v(\"MainActivity\", \"onResume\");\r\n    }\r\n\r\n    @Override\r\n    protected void onPause() {\r\n        super.onPause();\r\n        Log.v(\"MainActivity\", \"onPause\");\r\n    }\r\n\r\n    @Override\r\n    protected void onDestroy() {\r\n        super.onDestroy();\r\n        Log.v(\"MainActivity\", \"onDestroy\");\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/android/example/differentactivities/LifeCycleActivity.java	(revision 0cb1734e80622e377a2d5ed2ba49afc2db241671)
++++ app/src/main/java/android/example/differentactivities/LifeCycleActivity.java	(date 1604731975624)
+@@ -8,6 +8,7 @@
+ public class LifeCycleActivity extends AppCompatActivity {
+ 
+     // This method is for onCreate
++    // Second edit using Fork
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
