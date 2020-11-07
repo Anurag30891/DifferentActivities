@@ -8,7 +8,6 @@ import android.util.Log;
 public class LifeCycleActivity extends AppCompatActivity {
 
     // This method is for onCreate
-    // Second Test for Fork
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
